@@ -4,7 +4,7 @@ use Illuminate\Support\Str;
 use Faker\Generator as Faker;
 
 $factory->define(App\Models\User::class, function (Faker $faker) {
-    $date_time = $faker->date . ' ' . $faker->time;
+    $date_time = $faker->dateTimeBetween($startDate = '-90 days', $endDate = '-2 days', $timezone = null);
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,

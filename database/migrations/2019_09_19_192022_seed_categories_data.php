@@ -10,12 +10,12 @@ class SeedCategoriesData extends Migration
     {
         $categories = [
             [
-                'name'        => '分享',
+                'name'        => '每日说',
                 'description' => '分享创造，分享发现',
             ],
             [
-                'name'        => '教程',
-                'description' => '开发技巧、推荐扩展包等',
+                'name'        => '交流分享',
+                'description' => '笔记交流，研友分享',
             ],
             [
                 'name'        => '问答',
